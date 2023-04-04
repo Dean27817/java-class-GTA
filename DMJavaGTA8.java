@@ -1,3 +1,5 @@
+///////////////////////////////////////////////////////////////////////////////need to add comments still
+
 public class DMJavaGTA8 {
 
     public static void arraySorter(int[] array1) {
