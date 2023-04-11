@@ -1,6 +1,22 @@
+/*Author: dean morgan
+ * date: 4/11/2023
+ * class: csc 160
+ * assignment 
+ * this will be a driver program that, in tandom with the account program, will be a basic banking system
+ *  
+ */
+
 import java.util.Scanner;
 
 public class driver {
+
+/*  Author:	Dean Morgan
+**  Date:	4/11/2023
+**  Description:	takes the choice variable from the main function and calles the function from the Account class to tell the users what to do
+**  Parameters:	choice(int), dean(account object), scnr(Scanne4r object)
+**  Calling method:	main
+**  Return values:   none
+*/
 
     public static void accessAccount(int choice, Account dean, Scanner scnr) 
     {
