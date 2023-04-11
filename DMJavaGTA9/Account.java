@@ -1,12 +1,10 @@
-import java.util.Scanner;
-
 public class Account 
 {
     String name;
     int accountNum;
     double balance;
 
-    public void account(String userName, int userNum, double money)
+    public void setAccount(String userName, int userNum, double money)
     {
         name = userName;
         accountNum = userNum;
@@ -15,16 +13,25 @@ public class Account
 
     public void setBalance(double money) 
     {
-        balance = money;    
+        this.balance = money;    
     }
 
-    public String name() {
-        return name;
-    }
-
-    public String returnInfo() 
+    public String getName() 
     {
-        return "the useer " + this.name + " at account number " + this.accountNum + " has a balance of " + this.balance;
+        return this.name;
+    }
+    public int getAccountNum()
+    {
+        return this.accountNum;
+    }
+    public double getBalance()
+    {
+        return this.balance;
+    }
+
+    public String toString() 
+    {
+        return String.format("the user %s at account number %d has a balance of %f", this.name, this.accountNum, this.balance);
     }
     public void deposit(double money) 
     {
