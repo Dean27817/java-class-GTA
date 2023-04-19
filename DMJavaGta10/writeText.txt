@@ -1,3 +1,0 @@
-hello World
-good
-the string that was put in was IT WORKS

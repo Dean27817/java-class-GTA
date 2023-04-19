@@ -1,3 +1,12 @@
+/*Author: dean morgan
+ * date: 4/19/2023
+ * class: csc 160
+ * assignment 
+ *  *  this will work in tandom witht the DMJavaGTA10 program to help further understanding of working with file input and output
+ *  it will do this by reading text from the mainText.txt file and writing text to the writeText.txt file
+ */
+
+
 import java.io.*;
 public class DMJavaGTA10Driver 
 {
@@ -6,7 +15,7 @@ public class DMJavaGTA10Driver
         File forWriting = new File("writeText.txt");
         DMJavaGTA10 basicFunctions = new DMJavaGTA10();
         PrintWriter writeFile = new PrintWriter(forWriting);
-        if (basicFunctions.foundFile(mainText) && basicFunctions.foundFile(forWriting))
+        if (!basicFunctions.foundFile(mainText) && !basicFunctions.foundFile(forWriting))
         {
             basicFunctions.part1(mainText);
             basicFunctions.readOne(mainText);
